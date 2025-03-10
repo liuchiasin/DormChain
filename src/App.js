@@ -27,7 +27,7 @@ return (
       </div>
       {/* Right Image */}
       <div className="image-section">
-        <img src="/house.png" alt="Dormitory Illustration" className="dorm-image" />
+        <img src="/C:\Users\liuch\OneDrive\桌面\cape-cod-house-of-of-provence-.png" alt="Dormitory Illustration" className="dorm-image" />
       </div>
     </div>
   </div>
