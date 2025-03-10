@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App  () {
 return (
   <div className="container">
     {/* Navbar */}
@@ -27,12 +27,12 @@ return (
       </div>
       {/* Right Image */}
       <div className="image-section">
-        <img src="/C:\Users\liuch\OneDrive\桌面\cape-cod-house-of-of-provence-.png" alt="Dormitory Illustration" className="dorm-image" />
+        <img src="/封面照.png" alt="Dormitory Illustration" className="dorm-image" />
       </div>
     </div>
   </div>
 );
-};
+}
 
 export default App;
 
