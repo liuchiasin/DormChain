@@ -2,25 +2,41 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hello world</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+return (
+  <div className="container">
+    {/* Navbar */}
+    <nav className="navbar">
+      <h1 className="logo">DormChain</h1>
+      <div className="nav-buttons">
+        <button className="nav-btn">About us</button>
+        <button className="nav-btn">Sign Up!</button>
+      </div>
+    </nav>
+
+    {/* Main Content */}
+    <div className="content">
+      {/* Left Content */}
+      <div className="text-section">
+        <h1 className="title">
+          STUDENT DORMITORY <br /> BLOCKCHAIN
+        </h1>
+        <div className="search-box">
+          <input type="text" placeholder="search something here" className="search-input" />
+          <button className="search-btn">Search</button>
+        </div>
+      </div>
+      {/* Right Image */}
+      <div className="image-section">
+        <img src="/house.png" alt="Dormitory Illustration" className="dorm-image" />
+      </div>
     </div>
-  );
-}
+  </div>
+);
+};
 
 export default App;
+
+
+
+
+
