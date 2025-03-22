@@ -1,0 +1,104 @@
+.signup-container {
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.48);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center; 
+    margin-left: 50px; 
+    margin-top: 30px;
+    width: 100%; /* 讓標題區塊寬度填滿 */
+  }
+  
+  .signup-content {
+    display: flex;
+    gap: 50px;
+    font-family: "Luckiest Guy", cursive;
+    justify-content: center;  /* 讓 Login 和 Register 水平置中 */
+
+  }
+  
+  .signup-box {
+    position: relative; /* 確保它的 z-index 生效 */
+    z-index: 10; /* 讓它顯示在背景上方 */
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 15px;
+    text-align: center;
+
+  }
+  
+  .signup-box h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: "Luckiest Guy", cursive;
+    
+  }
+
+
+  
+  .signup-box input{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 15px; 
+    color: black;
+    opacity: 1;
+    text-align: center; 
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 18px;
+    background-color:rgba(217, 217, 217, 0.48);
+    border: 0.5px solid rgba(217, 217, 217, 0.48);
+    display: block; 
+  }
+  
+  .signup-btn {
+    width: 97%;
+    padding: 10px;
+    background-color: rgba(244, 226, 193, 1);
+    color: black;
+    border: none;
+    border-radius: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: "Luckiest Guy", cursive;
+  }
+  
+  .my-account-container {
+    background-image: url("主頁面.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10% center; 
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 確保內容正確排列 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* 讓背景在較低層 */
+  }
+
+  .bottomimage { 
+    position: absolute;  /* 確保它可以自由定位 */
+    bottom: 50px;       /* 距離底部 50px */
+    left: 50px;         /* 距離左側 20px */
+    width: 250px;       /* 調整圖片大小 */
+    height: auto;  
+    z-index: 1000;     
+}
+
+  

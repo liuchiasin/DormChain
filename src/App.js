@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import SignupPage from "./SignupPage";  
 
-function App() {
+
+function HomePage() {
   return (
     <div className="container" >   
       {/* Navbar */}
       <nav className="navbar">
         <div className="nav-buttons">
           <button className="nav-btn">About us</button>
+          <Link to="/signup">
           <button className="nav-btn">Sign Up</button>
+          </Link>
         </div>
       </nav>
 
@@ -32,6 +37,16 @@ function App() {
 
   );
 
+}
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<SignupPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

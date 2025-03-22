@@ -54,8 +54,9 @@
 
 .text-section {
   flex: 1;
-  text-align: left;
-  padding-right: 20px;
+  text-align: center;
+  padding-right: 100px; /* 減少右側間距 */
+  margin-left: -80px; /* 增加左側移動量 */
 }
 
 .title {
@@ -71,7 +72,6 @@
 
 
 .search-box {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   margin-top: -10px; 
@@ -94,7 +94,7 @@
   cursor: pointer;
   font-family: "Luckiest Guy", cursive;
   margin-top: 10px;  /* 按鈕向下移動 20px */
-  margin-left: 200px; /* 按鈕向右移動 50px */
+  margin-left: 300px; /* 按鈕向右移動 50px */
 }
 
 .image-section {
@@ -110,6 +110,7 @@
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(73, 64, 64, 0.316);
   margin-top: 50px;
+  margin-right: 20px;
 }
 
 .container {
@@ -122,12 +123,8 @@
     min-width: 3px;
   }
 
- 
-
-
-
-
-
+  
+  
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
