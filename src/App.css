@@ -59,17 +59,22 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   font-family: "Luckiest Guy", cursive;
-    font-weight: 500;
-    font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center; 
+  margin-left: -50px; 
+  width: 100%; /* 讓標題區塊寬度填滿 */
 }
+
 
 .search-box {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  margin-top: -10px; 
   gap: 10px;
 }
 
