@@ -1,3 +1,5 @@
+
+
 .App {
   min-height: 100vh;
   display: flex;
@@ -19,11 +21,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .nav-buttons {
   display: flex;
   gap: 10px;
+  margin-left: 900px; /* 按鈕向右移動 50px */
+  font-family: "Luckiest Guy", cursive;
 }
 
 .nav-btn {
@@ -33,6 +38,7 @@
   border: none;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Luckiest Guy", cursive;
 }
 
 .content {
@@ -55,6 +61,9 @@
 .title {
   font-size: 40px;
   font-weight: bold;
+  font-family: "Luckiest Guy", cursive;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .search-box {
@@ -73,25 +82,45 @@
 
 .search-btn {
   padding: 10px 20px;
-  background-color: navy;
+  background-color: rgba(0, 52, 89, 1);
   color: white;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
+  font-family: "Luckiest Guy", cursive;
+  margin-top: 10px;  /* 按鈕向下移動 20px */
+  margin-left: 200px; /* 按鈕向右移動 50px */
 }
 
 .image-section {
   flex: 1;
   display: flex;
   justify-content: center;
+
 }
 
 .dorm-image {
-  width: 400px;
+  width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(73, 64, 64, 0.316);
+  margin-top: 50px;
 }
+
+.container {
+
+    background-image: url('主頁面.png');
+    background-size: cover; /* 讓圖片填滿畫面 */
+    background-position: center; /* 讓圖片置中 */
+    background-repeat: no-repeat; /* 防止圖片重複 */
+    min-height: 100vh; /* 讓背景填滿整個畫面 */
+    min-width: 3px;
+  }
+
+ 
+
+
+
 
 
 
