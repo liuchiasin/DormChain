@@ -77,6 +77,21 @@
     cursor: pointer;
     font-family: "Luckiest Guy", cursive;
   }
+
+
+  .back-btn {
+    width: 10%;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: rgba(0, 52, 89, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    font-family: "Luckiest Guy", cursive;
+
+  }
   
   .my-account-container {
     background-image: url("主頁面.png");
