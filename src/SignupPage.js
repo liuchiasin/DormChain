@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";  
 import "./SignupPage.css";
 
 
 
 function SignupPage() {
+  const navigate = useNavigate();  //返回首頁
+
   return (
     <div className="my-account-container">
       <h1 className="title">MY ACCOUNT</h1>
@@ -28,12 +31,15 @@ function SignupPage() {
           <button className="signup-btn">REGISTER</button>
         </div>
       </div>
+
       <div className="image-section">
       <img src="account.png" alt="Decorative" className="bottomimage" />
       </div>
 
-
-    </div>
+      <button className="back-btn" onClick={() => navigate("/")}>
+        Back to Home
+      </button>
+    </div>   
   );
 }
 

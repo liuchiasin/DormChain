@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import SignupPage from "./SignupPage";  
+import AboutusPage from "./AboutusPage";
+
 
 
 function HomePage() {
@@ -10,7 +12,9 @@ function HomePage() {
       {/* Navbar */}
       <nav className="navbar">
         <div className="nav-buttons">
+        <Link to="/aboutus">
           <button className="nav-btn">About us</button>
+          </Link>
           <Link to="/signup">
           <button className="nav-btn">Sign Up</button>
           </Link>
@@ -44,6 +48,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/aboutus" element={<AboutusPage />} />
       </Routes>
     </Router>
   );

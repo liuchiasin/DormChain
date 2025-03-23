@@ -1,0 +1,157 @@
+.aboutus-container {
+    background-image: url("aboutus.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10% center; 
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 確保內容正確排列 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* 讓背景在較低層 */
+  }
+
+  .middle-image{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 40%;
+    z-index: 1;
+
+
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: -25px;
+  }
+  
+  .aboutus-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .aboutus-text {
+    max-width: 400px;
+    text-align: left;
+  }
+
+  .brand-name{
+    font-size: 75px;
+    position: relative;
+    font-family: "Nerko One", cursive;
+    margin-left: -550px;
+    margin-top: -125px;
+    z-index: 2;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 6px; 
+  }
+  
+  .aboutus-text p {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    width: 150%;
+    line-height: 1.5;
+    padding-left: 0;
+    text-align: justify;
+    margin-left: -110px;
+    margin-top: -110px;
+  }
+  
+  .aboutus-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .aboutus-text li {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    margin-left: -50px;
+    margin-top: 10px;
+  }
+
+  .advantages, .disadvantages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+  /* 讓優點和缺點分左右排列 */
+.advantages-disadvantages {
+    display: flex;
+    justify-content: space-between; /* 讓左右兩邊分開 */
+    gap: 40px; /* 設定左右間距 */
+  }
+  
+  /* 左邊優點區 */
+  .advantages {
+    list-style: none; /* 移除預設的點點 */
+    padding: 0;
+    text-align: left;
+    width: 45%; 
+  }
+  
+  /* 右邊缺點區 */
+  .disadvantages {
+    list-style: none; /* 移除預設的點點 */
+    padding: 0;
+    text-align: right;
+    width: 45%; 
+  }
+
+  .icon {
+    width: 30px; /* 控制圖片大小 */
+    height: 30px;
+    margin-right: 8px;
+  }
+  
+  
+  .aboutus-image img {
+    width: 120%;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: -160px;
+    z-index: 2; /* 最上層 */
+
+    animation: float 3s infinite ease-in-out;
+  }
+
+  
+  .back-btn {
+    width: 10%;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: rgba(0, 52, 89, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    font-family: "Luckiest Guy", cursive;
+
+  }
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* 上移 10px */
+    100% { transform: translateY(0); }
+  }
+  
+  .back-btn:hover {
+    background-color: rgba(0, 52, 89, 1);
+  }
+  

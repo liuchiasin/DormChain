@@ -1,5 +1,4 @@
 
-
 .App {
   min-height: 100vh;
   display: flex;
@@ -60,7 +59,7 @@
 }
 
 .title {
-  font-size: 50px;
+  font-size: 200px;
   font-weight: bold;
   font-family: "Luckiest Guy", cursive;
   font-weight: 500;
@@ -93,8 +92,8 @@
   border: none;
   cursor: pointer;
   font-family: "Luckiest Guy", cursive;
-  margin-top: 10px;  /* 按鈕向下移動 20px */
-  margin-left: 300px; /* 按鈕向右移動 50px */
+  margin-top: 80px;  
+  margin-left: 300px; 
 }
 
 .image-section {
