@@ -30,8 +30,8 @@
   .title {
     text-align: center;
     font-size: 32px;
-    font-weight: bold;
-    margin-bottom: -25px;
+    font-weight: 300;
+    margin-bottom: -38px;
   }
   
   .aboutus-content {
@@ -53,7 +53,7 @@
     position: relative;
     font-family: "Nerko One", cursive;
     margin-left: -550px;
-    margin-top: -125px;
+    margin-top: -15px;
     z-index: 2;
     font-weight: 400;
     font-style: normal;
@@ -63,13 +63,13 @@
   .aboutus-text p {
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 26px;
     width: 150%;
     line-height: 1.5;
     padding-left: 0;
     text-align: justify;
     margin-left: -110px;
-    margin-top: -110px;
+    margin-top: -120px;
   }
   
   .aboutus-text ul {
@@ -80,7 +80,7 @@
   .aboutus-text li {
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 26px;
     margin: 15px 0;
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
     width: 120%;
     border-radius: 10px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 115px;
     margin-left: -160px;
     z-index: 2; /* 最上層 */
 

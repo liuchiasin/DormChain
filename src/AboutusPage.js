@@ -16,20 +16,21 @@ function AboutusPage() {
         <div className="aboutus-text">
         <h2 className="brand-name">DormChain</h2>
           <p>
-            是一間以學生宿舍作為不動產代幣化平台，透過資產代幣化，
-            使中小企業或一般投資族群能夠以較低門檻進行投資活動，大幅提升資產流動率及投資意願。
+          是一個以學生宿舍作為投資標的的不動產代幣化平台，透過區塊鏈技術將傳統房地產數位化，
+          讓投資變得更加靈活與透明。我們的目標是打破傳統房地產投資的高門檻，
+          讓中小企業及一般投資者能以更低的資本參與市場，創造更多財務成長的機會。
           </p>
 
            {/* 優缺點區塊 */}
            <div className="advantages-disadvantages">
-            {/* 左邊：優點 ✅ */}
+            {/* 左邊：優點 */}
             <ul className="advantages">
             <li><img src="/check.png" alt="check" className="icon" /> 資金活用</li>
             <li><img src="/check.png" alt="check" className="icon" /> 門檻低</li>
             <li><img src="/check.png" alt="check" className="icon" /> 安全及透明</li>            
           </ul>
 
-            {/* 右邊：缺點 ❌ */}
+            {/* 右邊：缺點 */}
             <ul className="disadvantages">
             <li><img src="/x.png" alt="x" className="icon" /> 高額資金</li>
             <li><img src="/x.png" alt="x" className="icon" /> 用戶侷限</li>
