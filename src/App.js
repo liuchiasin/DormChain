@@ -1,22 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import "./App.css";
-import SignupPage from "./SignupPage";  
+import SignupPage from "./SignupPage";
 import AboutusPage from "./AboutusPage.js";
-
-
+import HousePage from "./HousePage.js";
 
 function HomePage() {
+  const navigate = useNavigate();
+
+  const handleStartClick = () => {
+    navigate("/start");
+  };
+
   return (
-    <div className="container" >   
+    <div className="container">
       {/* Navbar */}
       <nav className="navbar">
         <div className="nav-buttons">
-        <Link to="/aboutus">
-          <button className="nav-btn">About us</button>
+          <Link to="/aboutus">
+            <button className="nav-btn">About us</button>
           </Link>
           <Link to="/signup">
-          <button className="nav-btn">Sign Up</button>
+            <button className="nav-btn">Sign Up</button>
           </Link>
         </div>
       </nav>
@@ -29,7 +34,12 @@ function HomePage() {
             STUDENT DORMITORY <br /> BLOCKCHAIN
           </h1>
           <div className="search-box">
-            <button className="search-btn">Start</button>
+            <button 
+              className="search-btn" 
+              onClick={handleStartClick}
+            >
+              Start
+            </button>
           </div>
         </div>
         {/* Right Image */}
@@ -38,10 +48,9 @@ function HomePage() {
         </div>
       </div>
     </div>
-
   );
-
 }
+
 function App() {
   return (
     <Router>
@@ -49,13 +58,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/aboutus" element={<AboutusPage />} />
+        <Route path="/start" element={<HousePage />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
-
-

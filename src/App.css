@@ -112,7 +112,7 @@
 }
 
 .container {
-
+    background-color: #ffffff;
     background-image: url('主頁面.png');
     background-size: cover; /* 讓圖片填滿畫面 */
     background-position: center; /* 讓圖片置中 */
@@ -148,5 +148,35 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* App.css */
+.content {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+.content.slide-up {
+  transform: translateY(-100vh);
+}
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.transition-active {
+  animation: pageTransition 0.7s ease-in-out;
+}
+
+@keyframes pageTransition {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
   }
 }
