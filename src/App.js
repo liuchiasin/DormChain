@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import SignupPage from "./SignupPage";  
-import AboutusPage from "./AboutusPage";
+import AboutusPage from "./AboutusPage.js";
 
 
 
