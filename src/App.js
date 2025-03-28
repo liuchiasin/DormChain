@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./App.css";
 import SignupPage from "./SignupPage";
 import AboutusPage from "./AboutusPage.js";
@@ -18,10 +19,20 @@ function HomePage() {
       <nav className="navbar">
         <div className="nav-buttons">
           <Link to="/aboutus">
-            <button className="nav-btn">About us</button>
+            <motion.button 
+              className="nav-btn" 
+              whileHover={{ scale: 1.1 }}
+            >
+              About us
+            </motion.button>
           </Link>
           <Link to="/signup">
-            <button className="nav-btn">Sign Up</button>
+            <motion.button 
+              className="nav-btn" 
+              whileHover={{ scale: 1.1 }}
+            >
+              Sign Up
+            </motion.button>
           </Link>
         </div>
       </nav>
@@ -34,12 +45,13 @@ function HomePage() {
             STUDENT DORMITORY <br /> BLOCKCHAIN
           </h1>
           <div className="search-box">
-            <button 
+            <motion.button 
               className="search-btn" 
               onClick={handleStartClick}
+              whileHover={{ scale: 1.1 }}
             >
               Start
-            </button>
+            </motion.button>
           </div>
         </div>
         {/* Right Image */}

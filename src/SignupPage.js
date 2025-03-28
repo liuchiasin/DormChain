@@ -1,11 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";  
+import { motion } from "framer-motion";  
 import "./SignupPage.css";
 
-
-
 function SignupPage() {
-  const navigate = useNavigate();  //返回首頁
+  const navigate = useNavigate();  
 
   return (
     <div className="my-account-container">
@@ -17,7 +16,12 @@ function SignupPage() {
           <input type="email" placeholder="Enter your email" />
           <label>Password</label>
           <input type="password" placeholder="Enter your password" />
-          <button className="signup-btn">LOG IN</button>
+          <motion.button 
+            className="signup-btn"
+            whileHover={{ scale: 1.1 }}
+          >
+            LOG IN
+          </motion.button>
         </div>
 
         <div className="signup-box">
@@ -28,17 +32,26 @@ function SignupPage() {
           <input type="email" placeholder="Enter your email" />
           <label>Password</label>
           <input type="password" placeholder="Enter your password" />
-          <button className="signup-btn">REGISTER</button>
+          <motion.button 
+            className="signup-btn"
+            whileHover={{ scale: 1.1 }}
+          >
+            REGISTER
+          </motion.button>
         </div>
       </div>
 
       <div className="image-section">
-      <img src="account.png" alt="Decorative" className="bottomimage" />
+        <img src="account.png" alt="Decorative" className="bottomimage" />
       </div>
 
-      <button className="back-btn" onClick={() => navigate("/")}>
+      <motion.button 
+        className="back-btn" 
+        onClick={() => navigate("/")}
+        whileHover={{ scale: 1.1 }}
+      >
         Back to Home
-      </button>
+      </motion.button>
     </div>   
   );
 }
