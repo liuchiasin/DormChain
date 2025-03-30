@@ -121,6 +121,10 @@ function HousePage() {
     const latestHouses = houseData.filter(house => house.badge === 'Latest House');
     setSortedHouseData(latestHouses); };
 
+    const goToRoomDetail = (id) => {
+      navigate(`/introduce/${id}`);  // 導航到房間詳細介紹頁，並傳遞房間 ID
+    };
+
   return (
     <motion.div
       initial={{ y: "100vh", opacity: 0 }}  // 初始位置在畫面下方
@@ -156,6 +160,7 @@ function HousePage() {
             key={house.id}
             className="house-card"
             whileHover={{ scale: 1.05 }}
+            onClick={() => goToRoomDetail(house.id)} 
           >
             <div className={`house-badge house-badge-${house.badgeColor}`}>
               {house.badge}

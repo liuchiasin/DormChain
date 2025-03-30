@@ -5,6 +5,7 @@ import "./App.css";
 import SignupPage from "./SignupPage";
 import AboutusPage from "./AboutusPage.js";
 import HousePage from "./HousePage.js";
+import IntroducePage from "./IntroducePage.js";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -71,6 +72,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/aboutus" element={<AboutusPage />} />
         <Route path="/start" element={<HousePage />} />
+        <Route path="/introduce/:id" element={<IntroducePage />} />  {/* 動態路由 */}
       </Routes>
     </Router>
   );
