@@ -160,13 +160,13 @@ function HousePage() {
             <div className={`house-badge house-badge-${house.badgeColor}`}>
               {house.badge}
             </div>
-            <img 
-              src={house.image} 
-              alt={house.title} 
-              className="house-image" 
-            />
+            <img src={house.image} alt={house.title} className="house-image" />
             <div className="house-card-content">
-              <h2 className="house-card-title">{house.title}</h2>
+            <h2 className="house-card-title">
+            <span className="room-code">{house.title.match(/^[A-Za-z0-9]+/)[0]}</span> 
+            <span> </span>
+            <span className="room-name">{house.title.replace(/^[A-Za-z0-9]+\s*/, '')}</span>
+            </h2>
               {/* 顯示價格 */}
               <p className="house-card-price">{house.price}</p> 
               <div className="house-card-footer">

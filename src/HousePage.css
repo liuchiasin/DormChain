@@ -94,6 +94,7 @@
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
   }
 
   .house-grid {
@@ -134,15 +135,27 @@
   .house-card-content {
     padding: 15px;
   }
-  
+
   .house-card-title {
     font-size: 18px;
     font-weight: 100;
     margin-bottom: 10px;
-    font-family: "Luckiest Guy", cursive;
-
   }
   
+  
+  .room-code {
+    font-family:"Luckiest Guy", cursive;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  
+  .room-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  
+
   .house-card-footer {
     display: flex;
     justify-content: space-between;
