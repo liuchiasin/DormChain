@@ -1,4 +1,10 @@
 .introduce-container {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: "Luckiest Guy", cursive;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 .introduce-title {
@@ -6,8 +12,19 @@
     font-size: 24px;
     font-weight: 100;
     font-family: "Luckiest Guy", cursive;
-    margin-top: 25px;
-    margin-left: 25px;
+    margin-top: 50px;
+    margin-left: 35px;
+  }
+
+  .titleB{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: "Luckiest Guy", cursive;
+    margin-top: 35px;
+    margin-left: 35px;
+    color: #bb750d;
+
   }
 
 
