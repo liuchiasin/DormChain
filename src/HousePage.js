@@ -133,7 +133,7 @@ function HousePage() {
       className="house-page"
     >
       <div className="house-header">
-        <h1 className="house-title">STUDENT DORMITORY</h1>
+        <h1 className="house-title1">STUDENT DORMITORY</h1>
         <div className="house-actions">
           <button onClick={sortByFloor} className="house-action-btn">
           <img src="/樓層.png" alt="樓層" className="icon" /> 

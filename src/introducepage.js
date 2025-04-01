@@ -6,51 +6,51 @@ import './IntroducePage.css';
 const houseDetails = {
   1: {
     title: 'C305 女宿雅致套房',
-    detail: [['/bed.png', '1 single bed'],['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
+    detail: [['/bed.png', '4 single bed'],['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
     price: '$35,000',
-    images: ['/1111.png', '/1112.png'],
+    images: ['/雅致套房.png', '/女宿套房2.png','/女宿雅房3.png','/洗手台.png', '/廁所.png'],
   },
   2: {
     title: 'D408 女宿冷氣雅房',
     detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '4 desk']], 
     price: '$28,000',
-    images: ['/2222.png'],
+    images: ['/冷氣雅房.png', '/女宿雅房2.png','/女宿雅房廁所.png','/洗手台.png', '/廁所.png'],
   },
   3: {
     title: 'A210 男宿冷氣雅房',
     detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '4 desk']], 
     price: '$30,000',
-    images: ['/3333.png'],
+    images: ['/男冷氣雅房.png', '/男宿房型.png','/男宿雅房2.png', '/男宿洗手台.png', '/廁所.png'],
   },
   4: {
-    title: 'B101 男宿雅致套房',
-    detail: [['/bed.png', '1 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
+    title: 'A109 男宿雅致套房',
+    detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
     price: '$33,000',
-    images: ['/4444.png'],
+    images: ['/男精緻套房.png','/男宿套房房型.png','/男宿套房2.png', '/洗手台.png', '/男宿套房廁所.png'],
   },
   5: {
     title: 'A101 男宿雅致套房',
-    detail: [['/bed.png', '1 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
+    detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
     price: '$30,000',
-    images: ['/5555.png'],
+    images: ['/男精緻套房.png' ,'/男宿套房房型.png', '/男宿套房2.png', '/洗手台.png', '/男宿套房廁所.png'],
   },
   6: {
     title: 'E301 女宿冷氣雅房',
     detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '4 desk']], 
     price: '$29,000',
-    images: ['/6666.png'],
+    images: ['/冷氣雅房.png', '/女宿雅房2.png','/女宿雅房廁所.png','/洗手台.png', '/廁所.png'],
   },
   7: {
     title: 'E507 女宿冷氣雅房',
     detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '4 desk']], 
     price: '$29,000',
-    images: ['/7777.png'],
+    images: ['/冷氣雅房.png', '/女宿雅房2.png','/女宿雅房廁所.png','/洗手台.png', '/廁所.png'],
   },
   8: {
     title: 'C306 女宿冷氣套房',
-    detail: [['/bed.png', '1 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', '1 desk']], 
+    detail: [['/bed.png', '4 single bed'], ['/bathroom.png', '1 bathroom'],['/airconditioner.png', '1 air conditioner'],['/desk.png', ' desk']], 
     price: '$32,000',
-    images: ['/8888.png'],
+    images: ['/冷氣套房.png','/女宿套房2.png','/女宿雅房3.png',  '/洗手台.png', '/廁所.png'],
   }
 };
 
@@ -91,18 +91,21 @@ function IntroducePage() {
           <h3 className="price">{house.price}</h3>
         </div>
         <div className="introduce-right">
-          <img src={selectedImage} alt="房間展示" className="main-image" />
+          <img src={selectedImage} alt="房間展示" className="mainimage" />
           <div className="image-thumbnails">
-            {house.images && house.images.map((img, index) => (
-              <img 
-                key={index} 
-                src={img} 
-                alt="房間縮圖" 
-                className="thumbnail" 
-                onClick={() => setSelectedImage(img)} 
-              />
-            ))}
-          </div>
+        {house.images && house.images.map((img, index) => (
+        img !== selectedImage && ( // 避免主圖片出現在縮略圖區
+        <img 
+        key={index} 
+        src={img} 
+        alt="房間縮圖" 
+        className="thumbnail" 
+        onClick={() => setSelectedImage(img)} 
+      />
+    )
+  ))}
+</div>
+
         </div>
       </div>
       <motion.button 
@@ -112,10 +115,11 @@ function IntroducePage() {
       >
         Return to the previous page
       </motion.button>
+
       <motion.button 
         className="back-btn2" 
-        onClick={() => navigate("/house")}  
-        whileHover={{ scale: 1.1 }}  
+        onClick={() => navigate("/")}
+        whileHover={{ scale: 1.1 }}
       >
         Back to Home
       </motion.button>
